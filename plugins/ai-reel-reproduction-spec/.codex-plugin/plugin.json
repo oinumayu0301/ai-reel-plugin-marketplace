@@ -1,12 +1,12 @@
 {
   "name": "ai-reel-reproduction-spec",
-  "version": "0.2.0",
+  "version": "0.2.0+codex.20260909140422",
   "description": "Build exact-account AI Reel reproduction models and separately learn cross-account transferable growth priors.",
   "author": {
     "name": "C-Creation",
     "url": "https://github.com/oinumayu0301"
   },
-  "homepage": "https://github.com/oinumayu0301/ai-reel-plugin-marketplace#readme",
+  "homepage": "https://github.com/oinumayu0301/ai-reel-plugin-marketplace",
   "repository": "https://github.com/oinumayu0301/ai-reel-plugin-marketplace",
   "license": "MIT",
   "keywords": [

@@ -2,6 +2,7 @@
 
 ## 0.2.0
 
+- Expanded the Japanese README with beginner-friendly GitHub, installation, usage, update, troubleshooting, and contribution instructions.
 - Added `$learn-ai-reel-market` for multi-account market ingestion.
 - Added workspace-local persistent intelligence for hooks, scripts, visuals, audio, captions, and CTAs.
 - Added account-level influence caps, time decay, duplicate protection, small-sample shrinkage, evidence grades, and promotion thresholds.
