@@ -9,6 +9,8 @@ Use this order. Keep evidence, calculations, inferences, assumptions, and genera
 - Accessible posts / playable videos / visible-metric posts
 - Primary objective / secondary objective
 - Key assumptions and collection stop condition
+- Adaptive source used: exact-account model / cross-account priors / neither
+- Exact-account match key, account-model coverage status, and any cross-account prior marked transferable
 
 ## 1. Executive verdict
 
@@ -81,4 +83,3 @@ Ordered tests, one dominant variable per test, sample/window, threshold, decisio
 ## 16. Missing evidence request
 
 Prioritize only the inputs that would materially change the decision: representative downloads, post dates, visible metrics, Insights exports, profile visits, follows, retention, shares, or saves.
-

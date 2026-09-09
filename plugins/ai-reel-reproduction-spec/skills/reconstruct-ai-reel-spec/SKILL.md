@@ -11,7 +11,15 @@ Turn one public short-video account URL into a production-ready, evidence-aware 
 
 For a URL-only request, proceed without routine intake questions. Infer the platform from the URL, use the observed audience language or the user's language, and default to AI-assisted Reels, reach as the primary objective, qualified follows as the secondary objective, and one CTA per concept. State these as assumptions.
 
-Read [workflow.md](references/workflow.md) for every full URL-to-spec run. Read [evidence-and-scoring.md](references/evidence-and-scoring.md) when collecting or ranking posts. Read [forecasting.md](references/forecasting.md) before predicting reactions. Use [reproduction-spec-template.md](references/reproduction-spec-template.md) for the final artifact, and run [quality-gates.md](references/quality-gates.md) before delivery. Read [benchmark-accounts.md](references/benchmark-accounts.md) only when cross-account benchmarking is useful or the target evidence is sparse.
+Read [workflow.md](references/workflow.md) for every full URL-to-spec run. Read [evidence-and-scoring.md](references/evidence-and-scoring.md) when collecting or ranking posts. Read [forecasting.md](references/forecasting.md) before predicting reactions. Use [reproduction-spec-template.md](references/reproduction-spec-template.md) for the final artifact, and run [quality-gates.md](references/quality-gates.md) before delivery. Read [adaptive-intelligence.md](references/adaptive-intelligence.md) whenever a workspace intelligence corpus exists or the user wants the system to learn from the run. Read [benchmark-accounts.md](references/benchmark-accounts.md) only when cross-account benchmarking is useful or the target evidence is sparse.
+
+## Adaptive market intelligence
+
+Before generating concepts, look for `<workspace>/.ai-reel-intelligence/account-models/*.json` and `<workspace>/.ai-reel-intelligence/intelligence.json`. First select an account model only when its normalized URL or platform/handle exactly matches the requested target. One account is sufficient for this exact-target model. Then inspect cross-account intelligence, but apply only records marked `transferableAcrossAccounts: true`. Disclose update time, account/post coverage, evidence limitations, and every prior that materially influences the decision. Target-account evidence outranks cross-account priors. Ignore stale, low-confidence, or mismatched patterns.
+
+For a full URL analysis, persist a compact observation pack and rebuild the corpus unless the user requested a read-only run, declined persistence, or no writable workspace exists. Use the sibling `$learn-ai-reel-market` schema and ingest script. Store transferable mechanism labels and outcome evidence only; never store downloaded videos, full transcripts, copied scripts, identity-bearing assets, voice embeddings, credentials, or cookies.
+
+This learning layer may change recommendations for the same target immediately through its exact-account model. Recommendations for a different account may change only from eligible cross-account records in `intelligence.json`. It does not retrain the Codex base model and must not silently rewrite plugin instructions or publish to GitHub.
 
 ## Evidence boundary
 
@@ -26,7 +34,7 @@ Read [workflow.md](references/workflow.md) for every full URL-to-spec run. Read 
 
 Avoid raw cross-account popularity comparisons. Normalize within the target account or a matched cohort by format, topic, post age, and account stage. Compare at least three strong posts and three weak posts when available. If the sample is smaller, analyze all accessible posts and say so.
 
-For each comparison, capture:
+For each comparison, capture and encode reusable patterns for the six learning lanes:
 
 - viewer job, familiar tension, desired emotion, and share/save/comment/follow reason;
 - hook promise, first visible event, information gap, progression, re-hook, payoff, loop, and CTA;
@@ -87,5 +95,4 @@ node scripts/score_posts.mjs posts.json scored-posts.json
 
 ## Completion contract
 
-Deliver one self-contained Markdown reproduction specification following the template. It must distinguish evidence from recommendations, include winner/loser comparisons, show the market-in/product-out intersection, contain ten concepts plus one full script and production spec, provide conditional reaction ranges, list failure modes, and end with a prioritized evidence and test plan. If evidence grade is D, label the document `provisional` prominently.
-
+Deliver one self-contained Markdown reproduction specification following the template. It must distinguish evidence from recommendations, include winner/loser comparisons, show the market-in/product-out intersection, contain ten concepts plus one full script and production spec, provide conditional reaction ranges, list failure modes, and end with a prioritized evidence and test plan. State whether an exact-account model and/or cross-account priors were used, their coverage and confidence, and whether this run updated the corpus. Never apply a single-account model to a different target. If evidence grade is D, label the document `provisional` prominently.

@@ -10,6 +10,9 @@ Do not deliver the specification until every applicable gate passes.
 - Evidence grade matches actual coverage.
 - Winner/loser claims use matched cohorts or disclose the mismatch.
 - Alternative explanations are included for causal claims.
+- Any account-specific model matches the exact target URL or platform/handle.
+- Every prior applied from other accounts has `transferableAcrossAccounts: true` and sufficient independent-account support.
+- No single-account hypothesis is transferred to another target or promoted as a plugin-wide rule.
 
 ## Strategic quality
 
@@ -45,4 +48,3 @@ Do not deliver the specification until every applicable gate passes.
 - Follows are conditional unless profile-visit and conversion data exist.
 - Positive drivers, downside drivers, confidence, and invalidation signals are stated.
 - No guarantee language or unsupported precision remains.
-

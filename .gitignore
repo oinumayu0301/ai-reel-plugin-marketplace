@@ -14,3 +14,6 @@ __pycache__/
 .DS_Store
 Thumbs.db
 
+# Workspace-local learned market data
+.ai-reel-intelligence/
+

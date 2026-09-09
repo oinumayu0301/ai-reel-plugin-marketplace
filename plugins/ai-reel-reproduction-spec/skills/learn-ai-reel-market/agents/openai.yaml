@@ -1,0 +1,6 @@
+interface:
+  display_name: "AIリール市場学習"
+  short_description: "アカウント分析を蓄積して企画判断の精度を継続改善"
+  default_prompt: "Use $learn-ai-reel-market to ingest these public short-video accounts and update the workspace intelligence corpus."
+policy:
+  allow_implicit_invocation: true

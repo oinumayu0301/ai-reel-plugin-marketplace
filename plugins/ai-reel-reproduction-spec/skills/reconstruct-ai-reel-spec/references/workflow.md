@@ -45,6 +45,8 @@ Produce:
 
 ## 7. Generate and score the portfolio
 
+Before generating concepts, load the exact account model when its match key equals the target. Separately load only cross-account patterns marked `transferableAcrossAccounts: true`. Never transfer another account's private fingerprint merely because its niche or format looks similar.
+
 Create ten concepts across multiple pillars and emotional engines. Assign one primary objective and at most one secondary objective. Score the full vector, record the likely failure, and choose one test variable. Use `score_concepts.mjs` for repeatable weighted rankings when structured inputs are available.
 
 ## 8. Write the flagship specification
@@ -58,4 +60,3 @@ Use matched cohort quantiles and observed reaction rates where available. Give l
 ## 10. Design the validation loop
 
 Prioritize tests by value of information, not convenience. Change one dominant variable per test: hook wording, first visual, premise, duration, payoff, caption density, CTA, or profile handoff. Define observation windows and success thresholds before publishing. Separate creative learning from distribution noise.
-
