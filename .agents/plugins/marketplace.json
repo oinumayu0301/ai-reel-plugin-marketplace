@@ -1,0 +1,20 @@
+{
+  "name": "ai-reel-tools",
+  "interface": {
+    "displayName": "AIリールツール"
+  },
+  "plugins": [
+    {
+      "name": "ai-reel-reproduction-spec",
+      "source": {
+        "source": "local",
+        "path": "./plugins/ai-reel-reproduction-spec"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Marketing"
+    }
+  ]
+}

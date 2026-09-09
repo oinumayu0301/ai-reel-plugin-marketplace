@@ -1,0 +1,34 @@
+{
+  "name": "ai-reel-reproduction-spec",
+  "version": "0.1.0",
+  "description": "Turn a public short-video account URL into an evidence-backed, original reproduction specification.",
+  "author": {
+    "name": "C-Creation",
+    "url": "https://github.com/oinumayu0301"
+  },
+  "homepage": "https://github.com/oinumayu0301/ai-reel-plugin-marketplace#readme",
+  "repository": "https://github.com/oinumayu0301/ai-reel-plugin-marketplace",
+  "license": "MIT",
+  "keywords": [
+    "instagram-reels",
+    "short-video",
+    "marketing",
+    "content-analysis",
+    "ai-video"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "AIリール再現仕様書",
+    "shortDescription": "URLから伸びる機構を抽出し、オリジナルの再現仕様書を作成します。",
+    "longDescription": "Instagram Reels、TikTok、YouTube Shortsの公開アカウントURLを証拠ベースで分析し、勝敗比較、マーケットインとプロダクトアウト、企画、台本、映像・音声・編集仕様、反応予測、検証計画までを一つの再現仕様書にまとめます。",
+    "developerName": "C-Creation",
+    "category": "Productivity",
+    "capabilities": [
+      "公開アカウントURLの証拠ベース分析",
+      "伸びた・伸びない投稿の比較と機構抽出",
+      "オリジナル企画・台本・映像仕様の作成",
+      "低位・基準・高位の反応予測と検証計画"
+    ],
+    "defaultPrompt": "この公開ショート動画アカウントのURLを分析し、伸びる機構を抽出して、コピーではないオリジナルの再現仕様書を作成してください。"
+  }
+}
