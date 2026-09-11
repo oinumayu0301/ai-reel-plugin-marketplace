@@ -2,7 +2,7 @@
 
 ## 1. Define the decision
 
-Record target URL, platform, audience language, business/account goal, primary content objective, secondary objective, analysis date, and all inferred defaults. The default deliverable is a production-ready specification, not a promise of identical performance.
+Record target URL, platform, audience language, business/account goal, primary content objective, secondary objective, analysis date, and all inferred defaults. Accept either an account URL or a public post URL. The default deliverable is a production-ready specification, not a promise of identical performance.
 
 ## 2. Build an evidence manifest
 
@@ -18,7 +18,7 @@ State which condition ended collection. A large screenshot count does not repair
 
 ## 3. Normalize the comparison
 
-Create comparable cohorts by post age, content format, topic family, duration, and account stage where data allow. Use within-account ranks and age-normalized public proxies. Separate current totals from fixed-window performance. Never interpret an older post's larger cumulative count as proof of a better creative.
+Create comparable cohorts by post age, content format, topic family, duration, and account stage where data allow. Use within-account ranks and age-normalized public proxies. Separate current totals from fixed-window performance. Never interpret an older post's larger cumulative count as proof of a better creative. For a single-post target, skip artificial winner/loser comparisons and prominently label the result post-led and provisional.
 
 Choose matched winner/loser pairs. For each apparent cause, write at least one rival explanation and what evidence would distinguish them.
 
@@ -29,7 +29,7 @@ Choose matched winner/loser pairs. For each apparent cause, write at least one r
 3. **Execution grammar** — voice, captions, human realism, framing, motion, cut rhythm, sound, color, typography, and continuity.
 4. **Conversion system** — profile promise, pinned-post path, episodic expectation, trust, and reason to follow now.
 
-Analyze 0.2-second frames only for playable videos selected for micro-analysis. Align frames with audio transcript, cuts, caption changes, and semantic beats. Summarize repeated spans; do not produce hundreds of redundant conclusions.
+Analyze 0.2-second frames only for playable videos selected for micro-analysis. Align frames with audio transcript, cuts, caption changes, and semantic beats. Summarize repeated spans; do not produce hundreds of redundant conclusions. For song-led posts, analyse music only when the audio is actually playable or supplied, then read [music-reel-spec.md](music-reel-spec.md); metadata cannot establish lyrics, melody, voice identity, or whether a voice is AI.
 
 ## 5. Separate transferable and protected elements
 

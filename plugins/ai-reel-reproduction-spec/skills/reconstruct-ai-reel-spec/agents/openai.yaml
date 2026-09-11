@@ -1,7 +1,6 @@
 interface:
   display_name: "AIリール再現仕様書"
-  short_description: "公開URLから伸びる機構と制作仕様を一括作成"
-  default_prompt: "Use $reconstruct-ai-reel-spec with this public account URL to produce an evidence-backed, original short-video reproduction specification."
+  short_description: "公開URLから伸びる機構と映像・歌の制作仕様を作成"
+  default_prompt: "Use $reconstruct-ai-reel-spec with this public account or post URL to create an evidence-backed, original short-video or music-reel reproduction specification."
 policy:
   allow_implicit_invocation: true
-

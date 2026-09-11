@@ -72,6 +72,14 @@ Original character, realistic world/location, prop/wardrobe, lighting, lens/came
 
 Shot prompts, negative prompts, reference requirements, duration per shot, transition notes, voice specification without impersonation, caption plan, sound mix, cover, post caption, pinned comment, and export settings.
 
+## 13A. Music-led appendix (only when applicable)
+
+- Music evidence status and limitations; never infer lyrics, melody, singer identity, or AI use from attribution alone.
+- Music mechanism fingerprint: first lyric/visual hook, lyric function, chorus/drop/edit relationship, sound-on value, sound-off path, and replay/comment rationale.
+- Original song brief: audience, premise, original lyric hook, concise lyric structure, BPM/meter/mood/arrangement, energy curve, non-identifying Japanese synthetic vocal brief, generator-neutral prompt, and negative constraints.
+- Music-video beat map: original lyric function, visual action, summarized on-screen text, original beat cue, and retention purpose for every beat.
+- Rights checklist: original or licensed lyrics/melody/recording/video, no voice clone or artist imitation, provider commercial-use verification, and asset/license record.
+
 ## 14. Reaction forecast
 
 Low/base/high views, likes, comments, and conditional follows. Include window, basis, confidence, positive drivers, downside drivers, and invalidation signals.

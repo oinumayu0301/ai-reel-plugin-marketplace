@@ -1,17 +1,17 @@
 ---
 name: reconstruct-ai-reel-spec
-description: Analyze a public Instagram Reels, TikTok, or YouTube Shorts account URL, compare accessible strong and weak posts, extract transferable AI-short growth mechanisms, and create an original reproduction specification with concepts, scripts, visual and audio grammar, forecasts, and tests. Use for URL-to-spec competitor reverse-engineering. Do not use for exact copying, impersonation, bypassing access controls, or claiming hidden metrics.
+description: Analyze a public Instagram Reels, TikTok, or YouTube Shorts account or post URL, extract transferable growth mechanisms, and create an original reproduction specification with concepts, scripts, visual, audio, and music-video grammar, forecasts, and tests. Use for URL-to-spec competitor reverse-engineering. Do not use for exact copying, impersonation, bypassing access controls, or claiming hidden metrics.
 ---
 
 # Reconstruct AI Reel Spec
 
-Turn one public short-video account URL into a production-ready, evidence-aware reproduction specification. The output recreates the account's transferable growth logic, not its identity, protected expression, footage, character, voice, jokes, scripts, or shot sequence.
+Turn one public short-video account or post URL into a production-ready, evidence-aware reproduction specification. The output recreates transferable growth logic, not identity, protected expression, footage, character, voice, jokes, scripts, song lyrics, melody, or shot sequence.
 
 ## Route the request
 
-For a URL-only request, proceed without routine intake questions. Infer the platform from the URL, use the observed audience language or the user's language, and default to AI-assisted Reels, reach as the primary objective, qualified follows as the secondary objective, and one CTA per concept. State these as assumptions.
+For a URL-only request, proceed without routine intake questions. Infer the platform from the URL, use the observed audience language or the user's language, and default to AI-assisted Reels, reach as the primary objective, qualified follows as the secondary objective, and one CTA per concept. State these as assumptions. A post URL is a valid target: resolve the public creator account when available, but label the run as post-led and provisional unless a representative account sample is accessible.
 
-Read [workflow.md](references/workflow.md) for every full URL-to-spec run. Read [evidence-and-scoring.md](references/evidence-and-scoring.md) when collecting or ranking posts. Read [forecasting.md](references/forecasting.md) before predicting reactions. Use [reproduction-spec-template.md](references/reproduction-spec-template.md) for the final artifact, and run [quality-gates.md](references/quality-gates.md) before delivery. Read [adaptive-intelligence.md](references/adaptive-intelligence.md) whenever a workspace intelligence corpus exists or the user wants the system to learn from the run. Read [benchmark-accounts.md](references/benchmark-accounts.md) only when cross-account benchmarking is useful or the target evidence is sparse.
+Read [workflow.md](references/workflow.md) for every full URL-to-spec run. Read [evidence-and-scoring.md](references/evidence-and-scoring.md) when collecting or ranking posts. Read [forecasting.md](references/forecasting.md) before predicting reactions. Use [reproduction-spec-template.md](references/reproduction-spec-template.md) for the final artifact, and run [quality-gates.md](references/quality-gates.md) before delivery. Read [adaptive-intelligence.md](references/adaptive-intelligence.md) whenever a workspace intelligence corpus exists or the user wants the system to learn from the run. Read [benchmark-accounts.md](references/benchmark-accounts.md) only when cross-account benchmarking is useful or the target evidence is sparse. When the target contains an original vocal, song, music-led edit, or the user requests an AI song, also read [music-reel-spec.md](references/music-reel-spec.md).
 
 ## Adaptive market intelligence
 
@@ -43,7 +43,7 @@ For each comparison, capture and encode reusable patterns for the six learning l
 - series promise, profile conversion path, production difficulty, and rights risk;
 - alternative explanations such as post age, distribution timing, external traffic, novelty, and sample bias.
 
-Use 0.2-second sampling only when the source video is actually available and the precision is valuable. Treat adjacent samples as one continuous sequence, align them to semantic beats and cuts, and do not pretend each frame is an independent observation.
+Use 0.2-second sampling only when the source video is actually available and the precision is valuable. Treat adjacent samples as one continuous sequence, align them to semantic beats and cuts, and do not pretend each frame is an independent observation. Do not infer lyrics, melody, singer identity, or voice-generation method from post metadata alone.
 
 ## Extract the mechanism, not the costume
 
@@ -81,7 +81,7 @@ Write natural spoken Japanese when the audience is Japanese. On-screen text must
 - cover, caption, CTA, pinned-comment option, and profile handoff;
 - production QA and rejection criteria.
 
-The opening must be understandable in under one second. Show the event, consequence, object, number, or social reaction immediately. Give a partial answer by about three seconds, add at least three meaningful updates, include a new reveal or choice around 55–75% of duration, and make the ending resolve or reframe the opening.
+The opening must be understandable in under one second. Show the event, consequence, object, number, or social reaction immediately. Give a partial answer by about three seconds, add at least three meaningful updates, include a new reveal or choice around 55–75% of duration, and make the ending resolve or reframe the opening. For a music-led short, design an original lyric hook within the first 0.8 seconds and ensure the visual/text narrative works without sound.
 
 ## Forecast conditionally
 
