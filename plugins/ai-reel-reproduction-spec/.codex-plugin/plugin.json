@@ -1,6 +1,6 @@
 {
   "name": "ai-reel-reproduction-spec",
-  "version": "0.2.0+codex.20260911130311",
+  "version": "0.2.0+codex.20260911130932",
   "description": "Build exact-account AI Reel and music-reel reproduction models and separately learn cross-account transferable growth priors.",
   "author": {
     "name": "C-Creation",

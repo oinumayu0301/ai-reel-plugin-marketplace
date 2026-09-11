@@ -12,34 +12,40 @@ if (!inputPath) usage();
 
 const dimensions = [
   "reach", "first_3s_hold", "completion", "replay", "share", "save", "comment",
-  "follow", "trust", "market_fit", "series_potential", "repeatability", "feasibility", "rights_safety"
+  "follow", "trust", "market_fit", "series_potential", "repeatability", "feasibility", "rights_safety",
+  "audio_strategy_fit", "sound_off_clarity"
 ];
 
 const weights = {
   reach: {
-    reach: 0.15, first_3s_hold: 0.16, completion: 0.13, replay: 0.09, share: 0.10,
+    reach: 0.13, first_3s_hold: 0.15, completion: 0.12, replay: 0.09, share: 0.08,
     save: 0.03, comment: 0.04, follow: 0.03, trust: 0.02, market_fit: 0.10,
-    series_potential: 0.04, repeatability: 0.03, feasibility: 0.04, rights_safety: 0.04
+    series_potential: 0.04, repeatability: 0.03, feasibility: 0.04, rights_safety: 0.04,
+    audio_strategy_fit: 0.03, sound_off_clarity: 0.03
   },
   comment: {
-    reach: 0.06, first_3s_hold: 0.10, completion: 0.09, replay: 0.05, share: 0.07,
-    save: 0.03, comment: 0.22, follow: 0.04, trust: 0.06, market_fit: 0.10,
-    series_potential: 0.06, repeatability: 0.03, feasibility: 0.04, rights_safety: 0.05
+    reach: 0.05, first_3s_hold: 0.09, completion: 0.09, replay: 0.05, share: 0.07,
+    save: 0.03, comment: 0.20, follow: 0.04, trust: 0.06, market_fit: 0.10,
+    series_potential: 0.06, repeatability: 0.03, feasibility: 0.04, rights_safety: 0.05,
+    audio_strategy_fit: 0.02, sound_off_clarity: 0.02
   },
   save: {
-    reach: 0.05, first_3s_hold: 0.08, completion: 0.10, replay: 0.07, share: 0.06,
-    save: 0.22, comment: 0.02, follow: 0.05, trust: 0.11, market_fit: 0.09,
-    series_potential: 0.05, repeatability: 0.03, feasibility: 0.03, rights_safety: 0.04
+    reach: 0.05, first_3s_hold: 0.08, completion: 0.09, replay: 0.07, share: 0.06,
+    save: 0.20, comment: 0.02, follow: 0.05, trust: 0.10, market_fit: 0.09,
+    series_potential: 0.05, repeatability: 0.03, feasibility: 0.03, rights_safety: 0.04,
+    audio_strategy_fit: 0.02, sound_off_clarity: 0.02
   },
   follow: {
     reach: 0.05, first_3s_hold: 0.09, completion: 0.09, replay: 0.05, share: 0.05,
-    save: 0.05, comment: 0.04, follow: 0.18, trust: 0.09, market_fit: 0.11,
-    series_potential: 0.11, repeatability: 0.04, feasibility: 0.02, rights_safety: 0.03
+    save: 0.05, comment: 0.04, follow: 0.16, trust: 0.08, market_fit: 0.10,
+    series_potential: 0.11, repeatability: 0.04, feasibility: 0.02, rights_safety: 0.03,
+    audio_strategy_fit: 0.02, sound_off_clarity: 0.02
   },
   trust: {
     reach: 0.03, first_3s_hold: 0.06, completion: 0.09, replay: 0.03, share: 0.04,
-    save: 0.09, comment: 0.03, follow: 0.07, trust: 0.22, market_fit: 0.10,
-    series_potential: 0.07, repeatability: 0.04, feasibility: 0.05, rights_safety: 0.08
+    save: 0.08, comment: 0.03, follow: 0.07, trust: 0.20, market_fit: 0.09,
+    series_potential: 0.07, repeatability: 0.04, feasibility: 0.05, rights_safety: 0.08,
+    audio_strategy_fit: 0.02, sound_off_clarity: 0.02
   }
 };
 
@@ -77,7 +83,8 @@ const concepts = source.map((raw, index) => {
     scores[dimension] = boundedScore(concept.scores?.[dimension]);
     if (scores[dimension] === null) errors.push(`row ${index + 1}: '${dimension}' must be a number from 0 to 5`);
   }
-  const eligible = scores.rights_safety >= 4 && scores.feasibility >= 2 && scores.market_fit >= 3;
+  const eligible = scores.rights_safety >= 4 && scores.feasibility >= 2 && scores.market_fit >= 3
+    && scores.audio_strategy_fit >= 3 && scores.sound_off_clarity >= 3;
   return {
     ...concept,
     id: concept.id ?? `concept-${index + 1}`,
@@ -89,7 +96,9 @@ const concepts = source.map((raw, index) => {
     gateReasons: [
       ...(scores.rights_safety < 4 ? ["rights_safety_below_4"] : []),
       ...(scores.feasibility < 2 ? ["feasibility_below_2"] : []),
-      ...(scores.market_fit < 3 ? ["market_fit_below_3"] : [])
+      ...(scores.market_fit < 3 ? ["market_fit_below_3"] : []),
+      ...(scores.audio_strategy_fit < 3 ? ["audio_strategy_fit_below_3"] : []),
+      ...(scores.sound_off_clarity < 3 ? ["sound_off_clarity_below_3"] : [])
     ]
   };
 });
@@ -113,4 +122,3 @@ if (outputPath) {
 } else {
   process.stdout.write(serialized);
 }
-

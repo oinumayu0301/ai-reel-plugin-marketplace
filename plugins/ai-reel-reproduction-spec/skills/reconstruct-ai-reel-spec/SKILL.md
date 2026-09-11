@@ -11,7 +11,7 @@ Turn one public short-video account or post URL into a production-ready, evidenc
 
 For a URL-only request, proceed without routine intake questions. Infer the platform from the URL, use the observed audience language or the user's language, and default to AI-assisted Reels, reach as the primary objective, qualified follows as the secondary objective, and one CTA per concept. State these as assumptions. A post URL is a valid target: resolve the public creator account when available, but label the run as post-led and provisional unless a representative account sample is accessible.
 
-Read [workflow.md](references/workflow.md) for every full URL-to-spec run. Read [evidence-and-scoring.md](references/evidence-and-scoring.md) when collecting or ranking posts. Read [forecasting.md](references/forecasting.md) before predicting reactions. Use [reproduction-spec-template.md](references/reproduction-spec-template.md) for the final artifact, and run [quality-gates.md](references/quality-gates.md) before delivery. Read [adaptive-intelligence.md](references/adaptive-intelligence.md) whenever a workspace intelligence corpus exists or the user wants the system to learn from the run. Read [benchmark-accounts.md](references/benchmark-accounts.md) only when cross-account benchmarking is useful or the target evidence is sparse. When the target contains an original vocal, song, music-led edit, or the user requests an AI song, also read [music-reel-spec.md](references/music-reel-spec.md).
+Read [workflow.md](references/workflow.md) for every full URL-to-spec run. Read [evidence-and-scoring.md](references/evidence-and-scoring.md) when collecting or ranking posts. Read [forecasting.md](references/forecasting.md) before predicting reactions. Use [reproduction-spec-template.md](references/reproduction-spec-template.md) for the final artifact, and run [quality-gates.md](references/quality-gates.md) before delivery. Read [adaptive-intelligence.md](references/adaptive-intelligence.md) whenever a workspace intelligence corpus exists or the user wants the system to learn from the run. Read [benchmark-accounts.md](references/benchmark-accounts.md) only when cross-account benchmarking is useful or the target evidence is sparse. Read [music-reel-spec.md](references/music-reel-spec.md) for every full URL-to-spec run. It defines the required account-level choice between a music-led, music-assisted, and voice-led production route. Use its full original-song appendix only when that decision or the user's request calls for it.
 
 ## Adaptive market intelligence
 
@@ -56,11 +56,19 @@ Separate findings into:
 
 Use market-in to define the opening demand: audience, situation, pain, desire, viewing context, and reaction motive. Use product-out to define owned differentiation: expertise, original character, world, proof, generation capability, visual grammar, and repeatable series system. Select concepts at their intersection. Reject a generic trend with no account promise and an elaborate idea that requires prior explanation.
 
+## Decide the role of song before writing concepts
+
+For every target account, make an explicit `audio_strategy_decision`: `music-led`, `music-assisted`, or `voice-led`. Compare matched high- and low-performing posts when accessible; inspect whether music is a repeatable account promise, whether it earns replay, quoted comments, or shares, and whether the premise still works muted. A single music post or audio attribution is insufficient evidence of causal lift. In that case, label the decision a hypothesis and propose a controlled test rather than force song creation.
+
+- `music-led`: an original song or sung hook is the primary delivery system. Use the music-led appendix, create original lyrics and an original arrangement/voice brief, and include sound-on and sound-off success criteria.
+- `music-assisted`: music supports pacing or emotional lift, but the core message remains voice/text/visual-led. Specify the music role and mix, but do not create a full song unless it is an explicit test variant.
+- `voice-led`: song would add friction, obscure the premise, or conflict with target evidence. Specify speech, ambience, or simple SFX instead, and document why a music route was rejected.
+
 ## Build the original concept portfolio
 
-Generate ten materially different concepts across at least four content pillars and three emotional engines. Give each one a primary objective, at most one secondary objective, one CTA, one expected failure mode, and one variable to test. Score the full vector instead of using a single viral score:
+Generate ten materially different concepts across at least four content pillars and three emotional engines. Give each one a primary objective, at most one secondary objective, one CTA, one expected failure mode, one variable to test, and an audio route consistent with the account-level decision. Where `music-led` is selected, include an original song premise and lyric-hook function; where `music-assisted` is selected, include one song-versus-non-song test only when it has learning value. Score the full vector instead of using a single viral score:
 
-`reach`, `first_3s_hold`, `completion`, `replay`, `share`, `save`, `comment`, `follow`, `trust`, `market_fit`, `series_potential`, `repeatability`, `feasibility`, `rights_safety`.
+`reach`, `first_3s_hold`, `completion`, `replay`, `share`, `save`, `comment`, `follow`, `trust`, `market_fit`, `series_potential`, `repeatability`, `feasibility`, `rights_safety`, `audio_strategy_fit`, `sound_off_clarity`.
 
 When a machine-readable concept file is useful, run:
 
@@ -74,7 +82,7 @@ Select the top concept for the stated primary objective. Do not select any conce
 
 Write natural spoken Japanese when the audience is Japanese. On-screen text must summarize rather than transcribe the voice, remain understandable with sound off, use one semantic unit per screen, and stay inside vertical-video safe zones. Specify:
 
-- premise, audience, objective, emotional trajectory, novelty, and series promise;
+- premise, audience, objective, emotional trajectory, novelty, series promise, and audio strategy decision;
 - second-by-second script beats, voice lines, concise captions, visual actions, transitions, audio cues, and purpose;
 - original character/world bible, realistic locations, props, wardrobe, camera behavior, typography, palette, motion, edit rhythm, and negative constraints;
 - reusable generation prompts per shot, continuity controls, assembly order, audio mix, and export settings;

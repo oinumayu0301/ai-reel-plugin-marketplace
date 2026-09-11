@@ -28,9 +28,9 @@ Useful labels include `familiar-real-location`, `immediate-human-action`, `objec
 
 ## Audio
 
-Capture the audience-appropriate voice profile using broad non-identifying descriptors, language naturalness, speech rate, pitch range, pauses, emphasis, emotional trajectory, pronunciation, music function, SFX, re-hook sound change, ambience, silence, loudness balance, and speech masking.
+Capture the audience-appropriate voice profile using broad non-identifying descriptors, language naturalness, speech rate, pitch range, pauses, emphasis, emotional trajectory, pronunciation, music function, song-led versus voice-led delivery, lyric-hook function without retaining lyrics, SFX, re-hook sound change, ambience, silence, loudness balance, and speech masking.
 
-Never encode a real person's identity, voiceprint, cloning reference, or imitation instruction. Useful labels include `natural-japanese-young-adult`, `conversational-pacing`, `pause-before-reveal`, and `subtle-rehook-sfx`.
+Never encode a real person's identity, voiceprint, cloning reference, lyrics, melody, or imitation instruction. Useful labels include `natural-japanese-young-adult`, `conversational-pacing`, `pause-before-reveal`, `music-led-lyric-hook`, `music-assisted-emotional-lift`, `voice-led-clarity`, and `subtle-rehook-sfx`.
 
 ## Caption
 

@@ -44,6 +44,14 @@ Owned expertise, original character/world, production capability, proof, visual/
 
 Three market-in/product-out intersections and the selected account promise.
 
+## 7A. Account-level audio strategy decision
+
+- Recommended route: `music-led` / `music-assisted` / `voice-led`
+- Evidence and matched winner/loser comparison; clearly label an untested hypothesis
+- Music-on benefit, sound-off path, and the audience reason to replay, quote, share, or comment
+- Why the other two routes were rejected or deferred to testing
+- Exact-account model audio evidence and any eligible cross-account prior that affected this decision
+
 ## 8. Transfer map
 
 | Observed element | Mechanism | Replaceable expression | Protected/identity element | Original application | Evidence strength |
@@ -51,11 +59,11 @@ Three market-in/product-out intersections and the selected account promise.
 
 ## 9. Original portfolio — 10 concepts
 
-For each: title, one-line premise, pillar, emotional engine, primary/secondary objective, hook, three-step progression, payoff/loop, CTA, score vector, likely failure, test variable, and production difficulty.
+For each: title, one-line premise, pillar, emotional engine, primary/secondary objective, hook, three-step progression, payoff/loop, CTA, audio route (`music-led` / `music-assisted` / `voice-led`), score vector including audio-strategy fit and sound-off clarity, likely failure, test variable, and production difficulty.
 
 ## 10. Selected flagship
 
-Selection rationale, rejected alternatives, audience promise, objective, novelty, series promise, and expected failure mode.
+Selection rationale, rejected alternatives, audience promise, objective, novelty, series promise, expected failure mode, and the account-level audio strategy decision.
 
 ## 11. Full script and beat sheet
 

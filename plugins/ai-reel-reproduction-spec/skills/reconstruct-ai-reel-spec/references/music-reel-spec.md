@@ -1,6 +1,18 @@
 # Music-led Reel specification
 
-Use this reference when a target is song-led, includes an original vocal, or the user asks for an AI-generated song as part of the reproduction specification.
+Use this reference for every account-level reproduction analysis. Its first decision chooses whether music should lead, assist, or stay out of the recommended format. Use the original-song sections when a target is song-led, includes an original vocal, or the selected concept needs a song.
+
+## 0. Account-level music decision
+
+Treat a song as a strategic delivery choice, not a decoration. After studying the account's accessible high and low posts, choose one route:
+
+| Route | Use when | Required specification | Do not use when |
+|---|---|---|---|
+| `music-led` | A short original lyric can carry the core premise and create a clear replay, quotation, share, or account-identity benefit | Original song brief, music-video assembly map, music-specific forecast and tests | The lyric delays the premise or the account has no evidence that music is a differentiator |
+| `music-assisted` | Music can make a clear visual/voice concept feel faster or more emotional without carrying comprehension | Music role, BPM/energy/mix guidance, sound-off version, optional song test | A full song only repeats what the visual or voice already says |
+| `voice-led` | The viewer needs immediate explanation, credibility, or an intimate spoken delivery | Voice/SFX/ambience brief and a reason music was rejected | Music would mask clarity or impose production cost with no measurable upside |
+
+Record the evidence, confidence, rival explanation, and test that could reverse the choice. Do not select `music-led` from an isolated reference post, an audio attribution, or a personal preference alone.
 
 ## 1. Classify the evidence before analysing music
 
@@ -32,7 +44,7 @@ Never instruct a music generator to imitate a named artist, a reference track, a
 
 ## 3. Add the music-led appendix to the reproduction specification
 
-When this route applies, append these sections after the normal production bible.
+When the selected route is `music-led`, append these sections after the normal production bible. For `music-assisted`, produce sections A and C in proportion to the role; for `voice-led`, include only the explicit rejection rationale and voice/SFX alternative.
 
 ### A. Music mechanism fingerprint
 

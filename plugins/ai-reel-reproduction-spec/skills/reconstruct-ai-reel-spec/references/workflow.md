@@ -43,11 +43,21 @@ Produce:
 - an owned-asset map with expertise, original character/world, proof, generation skills, and sustainable production constraints;
 - three intersections that are understandable without context and distinct enough to create a followable account promise.
 
+## 6A. Make the account-level audio strategy decision
+
+Before concepts are written, classify the recommended route as `music-led`, `music-assisted`, or `voice-led`. State the observed evidence, alternative explanations, confidence, and a rejection reason for the two routes not selected.
+
+- **Music-led:** a fully original sung hook/song is central to the account promise and has a clear job in replay, quotation, share, or emotion.
+- **Music-assisted:** music increases pace or emotional reward but the premise must remain clear in speech/text/visuals; create a full song only as a deliberate test.
+- **Voice-led:** a song is likely to delay comprehension, weaken trust, or add production friction without a clear account-specific benefit.
+
+Never pick `music-led` only because one reference post uses an audio track. When evidence is insufficient, use `music-assisted` or `voice-led` as the baseline and test a music-led alternative rather than presenting it as proven.
+
 ## 7. Generate and score the portfolio
 
 Before generating concepts, load the exact account model when its match key equals the target. Separately load only cross-account patterns marked `transferableAcrossAccounts: true`. Never transfer another account's private fingerprint merely because its niche or format looks similar.
 
-Create ten concepts across multiple pillars and emotional engines. Assign one primary objective and at most one secondary objective. Score the full vector, record the likely failure, and choose one test variable. Use `score_concepts.mjs` for repeatable weighted rankings when structured inputs are available.
+Create ten concepts across multiple pillars and emotional engines. Assign one primary objective and at most one secondary objective. Give each concept an audio route: `music-led`, `music-assisted`, or `voice-led`. Score audio-strategy fit and sound-off clarity beside the normal vector, record the likely failure, and choose one test variable. Use `score_concepts.mjs` for repeatable weighted rankings when structured inputs are available.
 
 ## 8. Write the flagship specification
 

@@ -39,7 +39,7 @@ It may update evidence-weighted priors for:
 - hook families, first-frame clarity, stakes, recognition, information gaps, and first payoff;
 - script complexity, progression, escalation, re-hook, payoff, loop, and natural language;
 - visual realism, familiar locations, human consistency, motion, framing, cut rhythm, and continuity;
-- audio voice profile without identity imitation, pacing, pauses, emotion, music role, SFX, and mix;
+- audio voice profile without identity imitation, pacing, pauses, emotion, music role, song-led versus voice-led delivery, lyric-hook function without copied lyrics, SFX, and mix;
 - caption relationship to speech, density, timing, hierarchy, safe zones, contrast, and silent comprehension;
 - CTA reaction target, relevance, friction, timing, participation design, and profile handoff.
 

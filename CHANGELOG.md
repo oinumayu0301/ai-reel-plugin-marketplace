@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Made song creation an account-level strategy decision. Every reproduction specification now selects and justifies `music-led`, `music-assisted`, or `voice-led` before building concepts.
+- Added audio-route scoring to the ten-concept portfolio and expanded exact-account learning labels for song-led versus voice-led delivery.
 - Added a music-led Reel route to `$reconstruct-ai-reel-spec` for public post URLs and song/vocal-led short videos.
 - Added an original-song specification appendix covering music mechanism analysis, original lyric and arrangement briefs, non-identifying Japanese synthetic vocal design, sound-off caption logic, music-video beat mapping, rights checks, and music-specific tests.
 - Added explicit evidence boundaries: audio attribution alone cannot establish lyrics, melody, singer identity, or whether a vocal is AI.
